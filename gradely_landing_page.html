@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradely</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-panel {
+            width: 50%;
+            background-color: #355E3B;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .left-panel h1 {
+            font-size: 3rem;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .left-panel p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .contact-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .right-panel {
+            width: 50%;
+            background-color: #F7F7F7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background-color: #C1E1C1;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+        }
+
+        .login-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-box a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="contact-icon">
+                <img src="https://via.placeholder.com/24" alt="Contact">
+            </div>
+            <h1>Gradely</h1>
+            <p>Grading system for everybody</p>
+            <div class="footer">
+                <p>Pangasinan State University - Urdaneta City Campus<br>All Rights Reserved</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="login-box">
+                <h2>Log In</h2>
+                <form>
+                    <input type="text" placeholder="Admin ID" required>
+                    <input type="password" placeholder="Password" required>
+                    <p>No account? <a href="#">Click here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

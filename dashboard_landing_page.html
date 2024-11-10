@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #355E3B;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .sidebar .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sidebar .menu-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+
+        .sidebar .menu-item img {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .footer-icon {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer-icon img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .header {
+            background-color: #E95C2B;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 20px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .main-content {
+            background-color: #F7F7F7;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="menu">
+                <a class="menu-item" href="#">
+                    <img src="https://via.placeholder.com/20" alt="Courses">
+                    Courses
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="https://via.placeholder.com/20" alt="Students">
+                    Students
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="https://via.placeholder.com/20" alt="Profile">
+                    Profile
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="https://via.placeholder.com/20" alt="Logout">
+                    Logout
+                </a>
+            </div>
+            <div class="footer-icon">
+                <img src="https://via.placeholder.com/24" alt="Contact">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="header">
+                VINCE ALLEN B. CASINGAL
+            </div>
+            <div class="main-content">
+                <!-- Content goes here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
