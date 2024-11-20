@@ -158,5 +158,9 @@ def grading_system():
     print("=" * 40)
 
 
-# Run the grading system
-grading_system()
+def main():
+    grading_system()
+
+
+if __name__ == '__main__':
+    main()
