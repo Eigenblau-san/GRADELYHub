@@ -146,7 +146,7 @@ def grading_system():
         return  # Exit if there was an error in the categories
 
     # Calculate overall grade
-    overall_grade = (lecture_final_score + laboratory_final_score) / 2
+    overall_grade = (lecture_final_score * 0.6 + laboratory_final_score * 0.4)
 
     # Print overall results
     print("=" * 40)

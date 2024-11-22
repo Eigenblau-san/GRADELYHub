@@ -123,7 +123,7 @@ def input_raw_scores(term_name, num_activities, hps_dict, rubric_multipliers):
     return total_final_scores
 
 def compute_grades(term_name):
-    grading_types = ["quiz", "seatworks", "attendance", "compilation", "exam"]
+    grading_types = ["quiz", "seatworks", "attendance", "compilation", "exam", "lab reps"]
 
     rubric_multipliers = allocate_rubrics(term_name)
     num_activities = set_number_of_activities(term_name, grading_types)
